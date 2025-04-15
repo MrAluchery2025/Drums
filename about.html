@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Aluchery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1598387840871-7c50508b6ba5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .bg-overlay {
+      background: linear-gradient(180deg, rgba(20, 20, 60, 0.85) 0%, rgba(60, 20, 60, 0.85) 100%);
+    }
+    .text-accent {
+      color: #FF6F61;
+    }
+    .bg-accent {
+      background-color: #FF6F61;
+    }
+    .hover\:bg-accent-dark:hover {
+      background-color: #e85c50;
+    }
+    .border-accent {
+      border-color: #FF6F61;
+    }
+  </style>
+</head>
+<body class="text-white">
+  <div class="bg-overlay min-h-screen">
+    <!-- Navigation Bar -->
+    <nav class="border-b border-accent fixed w-full top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <div class="text-2xl font-bold flex items-center space-x-2 text-accent">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 2v2H7v2H5v2h14V6h-2V4h-2V2H9zM5 18v-2h2v-2h2v-2h6v2h2v2h2v2H5z" />
+            </svg>
+            <span>Aluchery</span>
+          </div>
+          <div class="hidden md:flex space-x-6 items-center">
+            <a href="index.html" class="hover:text-accent">Home</a>
+            <a href="about.html" class="hover:text-accent">About</a>
+            <div class="relative">
+              <button onclick="toggleDropdown()" class="hover:text-accent flex items-center">Media
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 ml-1">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div id="dropdown-menu" class="absolute bg-black border border-accent mt-2 py-2 w-40 hidden">
+                <a href="videos.html" class="block px-4 py-2 hover:bg-accent hover:text-white">Videos</a>
+                <a href="gallery.html" class="block px-4 py-2 hover:bg-accent hover:text-white">Gallery</a>
+              </div>
+            </div>
+            <a href="contact.html" class="hover:text-accent">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Spacer for fixed nav -->
+    <div class="h-16"></div>
+
+    <!-- About Section -->
+    <section class="max-w-6xl mx-auto py-20 px-6">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <img src="Aluchery.jpg" alt="Aluchery Drumming" class="rounded-xl shadow-lg w-full object-cover">
+        </div>
+        <div class="md:w-1/2">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-accent text-center md:text-left">Meet Aluchery</h1>
+          <p class="text-lg leading-relaxed mb-6">
+            I’m a passionate drummer with a love for rhythm, groove, and the stories that beats can tell. Whether it's a high-energy solo performance or locking in with a full band, my mission is simple: to make you feel the music.
+          </p>
+          <p class="text-lg leading-relaxed mb-6">
+            My style blends traditional African drumming roots with modern rhythms, drawing inspiration from various genres and cultures. I'm especially known for being an awesome reggae drummer, while also skillfully navigating genres like afrobeat, funk, soul, and jazz.
+          </p>
+          <p class="text-lg leading-relaxed">
+            Whether on stage or in the studio, I aim to leave an impression that lingers long after the final cymbal crash. Welcome to my groove.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

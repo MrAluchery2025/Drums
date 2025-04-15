@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Aluchery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1616627781849-d094f6bfa2c3?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .bg-overlay {
+      background: rgba(10, 10, 30, 0.85);
+    }
+    .text-accent {
+      color: #FF6F61;
+    }
+  </style>
+</head>
+<body class="text-white">
+  <div class="bg-overlay min-h-screen py-20 px-4">
+    <h1 class="text-4xl font-bold text-center text-accent mb-12">Gallery</h1>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <!-- Image 1 -->
+      <div class="group relative">
+        <img src="https://images.unsplash.com/photo-1614285592083-b0a1db6c858e?auto=format&fit=crop&w=800&q=80" alt="Drum 1" class="rounded-xl shadow-lg object-cover w-full h-64 transition duration-300 ease-in-out transform group-hover:scale-105">
+        <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-sm p-2 text-center rounded-b-xl">Capturing the rhythm live on stage.</p>
+      </div>
+      <!-- Image 2 -->
+      <div class="group relative">
+        <img src="https://images.unsplash.com/photo-1594641214392-58d46a7bcd1c?auto=format&fit=crop&w=800&q=80" alt="Drum 2" class="rounded-xl shadow-lg object-cover w-full h-64 transition duration-300 ease-in-out transform group-hover:scale-105">
+        <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-sm p-2 text-center rounded-b-xl">Studio vibes and sound precision.</p>
+      </div>
+      <!-- Image 3 -->
+      <div class="group relative">
+        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?auto=format&fit=crop&w=800&q=80" alt="Drum 3" class="rounded-xl shadow-lg object-cover w-full h-64 transition duration-300 ease-in-out transform group-hover:scale-105">
+        <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-sm p-2 text-center rounded-b-xl">Locked in with the groove.</p>
+      </div>
+      <!-- Image 4 -->
+      <div class="group relative">
+        <img src="https://images.unsplash.com/photo-1598387840871-7c50508b6ba5?auto=format&fit=crop&w=800&q=80" alt="Drum 4" class="rounded-xl shadow-lg object-cover w-full h-64 transition duration-300 ease-in-out transform group-hover:scale-105">
+        <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-sm p-2 text-center rounded-b-xl">Energy flowing during a reggae set.</p>
+      </div>
+      <!-- Image 5 -->
+      <div class="group relative">
+        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80" alt="Drum 5" class="rounded-xl shadow-lg object-cover w-full h-64 transition duration-300 ease-in-out transform group-hover:scale-105">
+        <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-sm p-2 text-center rounded-b-xl">Drumming in sync with soul and funk.</p>
+      </div>
+      <!-- Image 6 -->
+      <div class="group relative">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Drum 6" class="rounded-xl shadow-lg object-cover w-full h-64 transition duration-300 ease-in-out transform group-hover:scale-105">
+        <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-sm p-2 text-center rounded-b-xl">Jazzing it up in an intimate session.</p>
+      </div>
+      <!-- Image 7 -->
+      <div class="group relative">
+        <img src="https://images.unsplash.com/photo-1614285592083-b0a1db6c858e?auto=format&fit=crop&w=800&q=80" alt="Drum 7" class="rounded-xl shadow-lg object-cover w-full h-64 transition duration-300 ease-in-out transform group-hover:scale-105">
+        <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-sm p-2 text-center rounded-b-xl">Drumming solo under the spotlight.</p>
+      </div>
+      <!-- Image 8 -->
+      <div class="group relative">
+        <img src="https://images.unsplash.com/photo-1615885144260-bc774b88efb0?auto=format&fit=crop&w=800&q=80" alt="Drum 8" class="rounded-xl shadow-lg object-cover w-full h-64 transition duration-300 ease-in-out transform group-hover:scale-105">
+        <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-sm p-2 text-center rounded-b-xl">Rehearsal moments capturing the vibe.</p>
+      </div>
+      <!-- Image 9 -->
+      <div class="group relative">
+        <img src="https://images.unsplash.com/photo-1511451219475-16b380af4260?auto=format&fit=crop&w=800&q=80" alt="Drum 9" class="rounded-xl shadow-lg object-cover w-full h-64 transition duration-300 ease-in-out transform group-hover:scale-105">
+        <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-sm p-2 text-center rounded-b-xl">The heartbeat of a performance.</p>
+      </div>
+      <!-- Image 10 -->
+      <div class="group relative">
+        <img src="https://images.unsplash.com/photo-1586824746146-8332f3cd68b0?auto=format&fit=crop&w=800&q=80" alt="Drum 10" class="rounded-xl shadow-lg object-cover w-full h-64 transition duration-300 ease-in-out transform group-hover:scale-105">
+        <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-sm p-2 text-center rounded-b-xl">Feel the rhythm, feel the energy.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
